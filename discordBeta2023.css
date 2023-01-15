@@ -1,0 +1,35 @@
+/* Discord User Id */
+li>img[class^="Voice_avatar"]{ display:none; }
+li>img[class^="Voice_avatar"][src*="DiscordId"]{ display:block; }
+
+/* Avatar Picture When no speacking */
+.Voice_avatar__htiqH {
+content:url("URL picture no Speacking");
+  height:auto !important;
+  width:auto !important;
+  width:95% !important;
+  border-radius:0% !important;
+  filter: brightness(50%);
+}
+
+/* Avatar Picture When speacking */
+.Voice_avatarSpeaking__lE\+4m {
+    content:url("URL picture Speacking");
+    border-color:rgba(0,0,0,0) !important;
+    position:relative;
+    animation-name: speak-now;
+    animation-duration: 1s;
+    animation-fill-mode:forwards;
+    filter: brightness(100%);
+}
+/*Delete Name Element */
+.Voice_name__TALd9{ display:none; }
+
+/* Transparent  */
+body { background-color: rgba(0, 0, 0, 0);  overflow: hidden; }
+
+@keyframes speak-now {
+  0% { bottom:0px;  }
+  15% { bottom:10px;  }
+  30% { bottom:0px;  }
+}

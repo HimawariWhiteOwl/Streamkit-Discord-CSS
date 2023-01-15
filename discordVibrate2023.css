@@ -1,0 +1,81 @@
+/* Discord User Id */
+li>img[class^="Voice_avatar"]{ display:none; }
+li>img[class^="Voice_avatar"][src*="DiscordId"]{ display:block; }
+
+/* Avatar Picture When no speacking */
+.Voice_avatar__htiqH {
+content:url("URL picture no Speacking");
+  height:auto !important;
+  width:auto !important;
+  width:95% !important;
+  border-radius:0% !important;
+  filter: brightness(50%);
+}
+
+/* Avatar Picture When speacking */
+.Voice_avatarSpeaking__lE\+4m {
+    content:url("URL picture Speacking");
+    border-color:rgba(0,0,0,0) !important;
+    position:relative;
+    filter: brightness(100%);
+    -webkit-animation: vibrate-V10 0.1s linear infinite both;
+	        animation: vibrate-V10 0.1s linear infinite both;
+}
+/*Delete Name Element */
+.Voice_name__TALd9{ display:none; }
+
+/* Transparent  */
+body { background-color: rgba(0, 0, 0, 0);  overflow: hidden; }
+
+@-webkit-keyframes vibrate-V10 {
+    0% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+    20% {
+      -webkit-transform: translate(-10px, 10px);
+              transform: translate(-10px, 10px);
+    }
+    40% {
+      -webkit-transform: translate(-10px, -10px);
+              transform: translate(-10px, -10px);
+    }
+    60% {
+      -webkit-transform: translate(10px, 10px);
+              transform: translate(10px, 10px);
+    }
+    80% {
+      -webkit-transform: translate(10px, -10px);
+              transform: translate(10px, -10px);
+    }
+    100% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+  }
+  @keyframes vibrate-V10 {
+    0% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+    20% {
+      -webkit-transform: translate(-10px, 10px);
+              transform: translate(-10px, 10px);
+    }
+    40% {
+      -webkit-transform: translate(-10px, -10px);
+              transform: translate(-10px, -10px);
+    }
+    60% {
+      -webkit-transform: translate(10px, 10px);
+              transform: translate(10px, 10px);
+    }
+    80% {
+      -webkit-transform: translate(10px, -10px);
+              transform: translate(10px, -10px);
+    }
+    100% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+  }
